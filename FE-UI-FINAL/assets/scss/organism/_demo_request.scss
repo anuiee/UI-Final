@@ -1,0 +1,183 @@
+.demo_request{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: $white;
+    
+
+    &__sec1{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-top: 100px;
+        margin-left: 50px;
+        
+
+        &__top{
+            display: flex;
+            justify-content: left;
+        }
+        &__middle{
+            display: flex;
+            justify-content: left;
+        }
+        &__bottom{
+            display: flex;
+            justify-content: left;
+        }
+        &__button{
+            display: flex;
+            height: 30px;
+            width: 100px;
+            color: $white;
+            background-color: $color;
+            margin-top: 20px;
+            margin-left: 12px;
+            align-items: center;
+        }
+        &__button::after{
+            content: ">";
+            color: $white;
+            margin-left: 10px;
+        }
+
+    }
+    &__sec2{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-top: 100px;
+        margin-right: 50px;
+        border-left: 1px solid rgb(141, 134, 134);
+
+        &__box{
+            margin-left: 60px;
+            margin-top: 50px;
+
+        }
+    }
+}
+
+@include mobile{
+   
+    .demo_request{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1500px;
+        background-color: $white;
+        
+    
+        &__sec1{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 100px;
+            margin-left: 20px;
+            height: 500px;
+
+            
+    
+            &__top{
+                display: flex;
+                flex-direction: column;
+                
+            }
+       
+            &__button{
+                display: flex;
+                height: 30px;
+                width: 100px;
+                color: $white;
+                background-color: $color;
+                margin-top: 20px;
+                margin-left: 12px;
+                align-items: center;
+            }
+            
+            &__button::after{
+                content: ">";
+                color: $white;
+                margin-left: 10px;
+            }
+    
+        }
+        &__sec2{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 100px;
+            margin-right: 20px;
+            border-left: 1px solid rgb(141, 134, 134);
+            height: 800px;
+            margin-bottom: 300px;
+            // overflow-y: hidden;
+    
+            &__box{
+                margin-left: 20px;
+                margin-top: 50px;
+    
+            }
+        }
+    }
+}
+.demo_request__sec1__button:hover{
+    transform: scale(.9);
+ }
+
+@include tablet{
+    .demo_request{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        background-color: $white;
+        
+    
+        &__sec1{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin-top: 100px;
+            margin-left: 50px;
+            
+    
+            &__top{
+                display: flex;
+                justify-content: left;
+            }
+            
+            &__button{
+                display: flex;
+                height: 30px;
+                width: 100px;
+                color: $white;
+                background-color: $color;
+                margin-top: 20px;
+                margin-left: 12px;
+                align-items: center;
+            }
+            &__button::after{
+                content: ">";
+                color: $white;
+                margin-left: 10px;
+            }
+    
+        }
+        &__sec2{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 100px;
+            margin-right: 20px;
+            border-left:none;
+            
+    
+            &__box{
+                margin-left: 20px;
+                margin-top: 20px;
+    
+            }
+        }
+    }
+}

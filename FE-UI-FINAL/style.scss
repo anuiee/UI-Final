@@ -1,0 +1,26 @@
+//base
+@import './assets/scss/base/colors';
+@import './assets/scss/base/mixin';
+@import './assets/scss/base/scale';
+//atom
+@import './assets/scss/atom/container';
+@import './assets/scss/atom/sub_heading';
+@import './assets/scss/atom/_heading';
+@import './assets/scss/atom/paragraph';
+//molecule
+@import './assets/scss/molecule/cards';
+@import './assets/scss/molecule/cards2';
+@import './assets/scss/molecule/input';
+//organism
+
+@import './assets/scss/organism/navbar-first';
+@import './assets/scss/organism/navbar_second';
+@import './assets/scss/organism/carousel_banner';
+@import './assets/scss/organism/brochure_body';
+@import './assets/scss/organism/card_body';
+@import './assets/scss/organism/card_body_carousel';
+@import './assets/scss/organism/delivery_model_body';
+@import './assets/scss/organism/delivery_model_carousel';
+@import './assets/scss/organism/choose_body';
+@import './assets/scss/organism/demo_request';
+@import './assets/scss/organism/footer';

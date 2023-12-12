@@ -1,0 +1,120 @@
+.input_div{
+    display: flex;
+    align-items: center;
+    width: 366px;
+    height: 35px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    position: relative;
+    margin-left: 10px;
+    &--phone{
+        width: 330px;
+    }
+
+    &__sub{
+        width: 50px;
+        border-right: 1px solid rgb(125, 122, 122);
+    }
+
+    &__img{
+        position: absolute;
+        right: 10px;
+        top:7px
+    }
+    &--area{
+        display: flex;
+        align-items: center;
+        width: 745px;
+        height: 60px;
+        // border: 1px solid rgb(211, 206, 206);
+        background: #FFF;
+        position: relative;
+        margin-left: 10px;
+    }
+}
+
+.input_style{
+    width: 320px;
+    height: 30px;
+    border: 1px solid rgb(109, 106, 106);
+    position: relative;
+    border: none;
+    &--phone{
+        width: 230px;
+    }
+    &--code{
+        width: 50px;
+    }
+
+
+}
+.input2_style{
+    width: 50px;
+    height: 30px;
+    border: 1px solid rgb(109, 106, 106);
+    position: relative;
+     border: none;
+     
+
+
+}
+.input_style:focus{
+    outline: none;
+}
+.input--area{
+    width: 700px;
+    height: 60px;
+    border: none;
+    opacity: 0.8;
+ }
+ .input--area:focus{
+    outline: none;
+ }
+ .input2_style:focus{
+    outline: none;
+ }
+
+ @include mobile{
+    .input_div{
+        margin-bottom: 10px;
+    }
+    .input--area{
+        width: 320px;
+        height: 60px;
+        border: none;
+     }
+     .input_div--area{
+        width: 306px;
+     }
+     .input_div__sub{
+        width: 40px;
+     }
+     .input_div--phone{
+        width: 300px;
+     }
+ }
+
+ @include tablet{
+    .input_div{
+
+
+        margin-bottom: 10px;
+    }
+    .input_div--area{
+        width: 650px;
+        height: 60px;
+        
+        
+     }
+  
+    
+     .input_div__sub{
+        display: none;
+     }
+     .input_div--phone{
+        width: 200px;
+     }
+     .input2_style{
+        display: none;
+     }
+ }

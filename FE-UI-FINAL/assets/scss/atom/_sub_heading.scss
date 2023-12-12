@@ -1,0 +1,89 @@
+.sub_heading{
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    width: 100%;
+    color: $color;
+    font-size: 22px;
+    margin-left: 50px;
+    margin-right: 50px;
+    &__h5{
+        padding: 10px;
+        letter-spacing: 2.52px;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    &__h5::after{
+        content: " ";
+        display: flex;
+        height: 1px;
+        width: 50%;
+        background: $color;
+        position: relative;
+        left: 230px;
+        top: -10px;
+        opacity: 0.8;
+        
+    }
+    &__h2{
+        padding:0px;
+        margin-top: 0;
+        font-weight: 700;
+    }
+    &--white{
+        color: $white;
+        width: 100%;
+    }
+    &--custom{
+        color: $color;
+        width: 100%;
+    }
+}
+.sub_heading__h5--white{
+    padding: 0;
+    width: 100%;
+    letter-spacing: 2.52px;
+    text-transform: uppercase;
+    font-size: 15px;
+    // margin-left: 50px;
+}
+.sub_heading__h5--white::after{
+
+    content: " ";
+    display: flex;
+    height: 2px;
+    width: 30%;
+    position: relative;
+    left: 250px;
+    top: -10px;
+    background: $white;
+}
+.sub_heading__h5--custom{
+    padding: 0;
+    width: 100%;
+    letter-spacing: 2.52px;
+    text-transform: uppercase;
+    font-size: 15px;
+    // margin-left: 50px;
+}
+.sub_heading__h5--custom::after{
+
+    content: " ";
+    display: flex;
+    height: 2px;
+    width: 200px;
+    position: relative;
+    left: 150px;
+    top: -10px;
+    background: $color;
+}
+@include mobile{
+    .sub_heading{
+        max-width: 400px;
+    }
+    .sub_heading__h5--white{
+        max-width: 400px;
+    }
+
+}
